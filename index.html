@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прогноз погоды</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <div class="weather">
+        <div class="weather__inner">
+          <div class="current">
+            <!--  блок с текущей погодой -->
+            <div class="current__city">Москва</div>
+            <div class="current__description">ясно</div>
+            <div class="current__temperature">25˚</div>
+          </div>
+    
+          <div class="forecast">
+            <!-- // блок с прогнозом -->
+            <div class="forecast__item">
+              <div class="forecast__time">Сейчас</div>
+              <div class="forecast__icon icon__01n"></div>
+              <div class="forecast__temperature">25˚</div>
+            </div>
+    
+            <div class="forecast__item">
+              <div class="forecast__time">16:00</div>
+              <div class="forecast__icon icon__01d"></div>
+              <div class="forecast__temperature">25˚</div>
+            </div>
+    
+            <div class="forecast__item">
+              <div class="forecast__time">17:00</div>
+              <div class="forecast__icon icon__04d"></div>
+              <div class="forecast__temperature">25˚</div>
+            </div>
+    
+            <div class="forecast__item">
+              <div class="forecast__time">18:00</div>
+              <div class="forecast__icon icon__03n"></div>
+              <div class="forecast__temperature">25˚</div>
+            </div>
+    
+            <div class="forecast__item">
+              <div class="forecast__time">19:00</div>
+              <div class="forecast__icon, clouds"></div>
+              <div class="forecast__temperature">25˚</div>
+            </div>
+    
+            <div class="forecast__item">
+              <div class="forecast__time">20:00</div>
+              <div class="forecast__icon icon__03n"></div>
+              <div class="forecast__temperature">25˚</div>
+            </div>
+          </div>
+    
+
+          <div class="details">
+            <!-- // блок с деталями -->
+            <!-- Состоит из 2 рядов с 2 ячейками -->
+            <div class="details__row">
+              <div class="details_item">
+                <div class="details_item_name">ощущается как</div>
+                <div class="details_item_value">22˚</div>
+              </div>
+              <div class="details_item">
+                <div class="details_item_name">ощущается как</div>
+                <div class="details_item_value">22˚</div>
+              </div>
+            </div>
+            <div class="details__row">
+              <div class="details_item">
+                <div class="details_item_name">ощущается как</div>
+                <div class="details_item_value">22˚</div>
+              </div>
+              <div class="details_item">
+                <div class="details_item_name">ощущается как</div>
+                <div class="details_item_value">22˚</div>
+              </div>
+            </div>
+            </div>
+          </div>
+
+    </div>
+    
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

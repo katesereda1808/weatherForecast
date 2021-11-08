@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+img{
+    size: 50px;
+}
+html[data-theme="day"].weather,
+.weather{
+    background: linear-gradient( rgb(47, 131, 199),rgb(174, 203, 241));
+    
+
+}
+html[data-theme="night"] .weather {
+    background: linear-gradient( rgb(7, 51, 109),rgb( 24, 75, 117));
+
+}
+.weather__inner{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px;
+   
+}
+
+.forecast{
+  display: flex;
+  justify-content: space-between;
+}
+.icon{
+  width: 50px;
+  height: 50px;
+}
+
+.current{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.current__city{
+  font-size: 3em;
+}
+.current__description{
+  font-size: 1.5em;
+}
+.current__temperature{
+  font-size: 4em;
+}
+
+
+.icon__01n,
+.icon__02d,
+.icon__02n,
+.icon__03d,
+.icon__03n,
+.icon__04d,
+.icon__04n,
+.icon__09d,
+.icon__09n,
+.icon__10d,
+.icon__10n,
+.icon__11n,
+.icon__11n,
+.icon__13d,
+.icon__13n,
+.icon__50d,
+.icon__50n {
+  background-size: 50px;
+  background-repeat: no-repeat;
+}
+
+
+.cloud {
+  background-image: url("./images/cloud.svg");
+}
+
+
+.clouds {
+  background-image: url("./images/clouds.svg");
+}
+
+
+.icon__03n {
+  background-image: url("./images/drops.svg");
+}
+
+.icon__04d,
+.icon__04n {
+  background-image: url("./images/mist.svg");
+}
+
+.icon__09d,
+.icon__09n {
+  background-image: url("./images/partlyCloudy.svg");
+}
+
+.icon__10d,
+.icon__10n {
+  background-image: url("./images/rain.svg");
+}
+
+.icon__11n,
+.icon__11n {
+  background-image: url("./images/shower.svg");
+}
+
+.icon__13d,
+.icon__13n {
+  background-image: url("./images/snow.svg");
+}
+
+.icon__50d,
+.icon__50n {
+  background-image: url("./images/sun.svg");
+}
+
+.icon__51d,
+.icon__51n {
+  background-image: url("./images/thunderstorm.svg");
+}
