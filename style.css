@@ -8,27 +8,27 @@
 img{
     size: 50px;
 }
+
 html[data-theme="day"].weather,
 .weather{
-    background: linear-gradient( rgb(47, 131, 199),rgb(174, 203, 241));
-    
-
+    background: linear-gradient(360deg, #3594bf 0%, rgba(255, 255, 255, 0) 100%), #53a6cd;
 }
+
 html[data-theme="night"] .weather {
-    background: linear-gradient( rgb(7, 51, 109),rgb( 24, 75, 117));
-
+    background: linear-gradient(360deg, #55707e 0%, rgba(255, 255, 255, 0) 100%),#042232;
 }
+
 .weather__inner{
     max-width: 900px;
     margin: 0 auto;
     padding: 10px;
-   
 }
 
 .forecast{
   display: flex;
   justify-content: space-between;
 }
+
 .icon{
   width: 50px;
   height: 50px;
@@ -42,13 +42,14 @@ html[data-theme="night"] .weather {
 .current__city{
   font-size: 3em;
 }
+
 .current__description{
   font-size: 1.5em;
 }
+
 .current__temperature{
   font-size: 4em;
 }
-
 
 .icon__01n,
 .icon__02d,
@@ -71,16 +72,13 @@ html[data-theme="night"] .weather {
   background-repeat: no-repeat;
 }
 
-
 .cloud {
   background-image: url("./images/cloud.svg");
 }
 
-
 .clouds {
   background-image: url("./images/clouds.svg");
 }
-
 
 .icon__03n {
   background-image: url("./images/drops.svg");
@@ -119,4 +117,19 @@ html[data-theme="night"] .weather {
 .icon__51d,
 .icon__51n {
   background-image: url("./images/thunderstorm.svg");
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.details_item {
+  flex: 1;
+  margin-bottom: 10px;
+}
+
+.details_item_name {
+  margin-bottom: 10px;
 }
