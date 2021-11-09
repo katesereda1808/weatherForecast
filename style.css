@@ -29,10 +29,6 @@ html[data-theme="night"] .weather {
   justify-content: space-between;
 }
 
-.icon{
-  width: 50px;
-  height: 50px;
-}
 
 .current{
     text-align: center;
@@ -50,27 +46,32 @@ html[data-theme="night"] .weather {
 .current__temperature{
   font-size: 4em;
 }
+.forecast__item{
+  text-align: center;
+}
 
-.icon__01n,
-.icon__02d,
-.icon__02n,
-.icon__03d,
-.icon__03n,
-.icon__04d,
-.icon__04n,
-.icon__09d,
-.icon__09n,
-.icon__10d,
-.icon__10n,
-.icon__11n,
-.icon__11n,
-.icon__13d,
-.icon__13n,
-.icon__50d,
-.icon__50n {
+.forecast__icon{
+  width: 50px;
+  height: 50px;
   background-size: 50px;
   background-repeat: no-repeat;
+  margin: 10px;
 }
+
+
+/* .thunderstorm,
+.sun,
+.snow,
+.shower,
+.rain,
+.partlyCloudy,
+.mist,
+.drops,
+.clouds,
+.cloud{
+  background-size: 50px;
+  background-repeat: no-repeat;
+}  */
 
 .cloud {
   background-image: url("./images/cloud.svg");
@@ -80,42 +81,35 @@ html[data-theme="night"] .weather {
   background-image: url("./images/clouds.svg");
 }
 
-.icon__03n {
+.drops {
   background-image: url("./images/drops.svg");
 }
 
-.icon__04d,
-.icon__04n {
+.mist {
   background-image: url("./images/mist.svg");
 }
 
-.icon__09d,
-.icon__09n {
+.partlyCloudy{
   background-image: url("./images/partlyCloudy.svg");
 }
 
-.icon__10d,
-.icon__10n {
+.rain {
   background-image: url("./images/rain.svg");
 }
 
-.icon__11n,
-.icon__11n {
+.shower {
   background-image: url("./images/shower.svg");
 }
 
-.icon__13d,
-.icon__13n {
+.snow {
   background-image: url("./images/snow.svg");
 }
 
-.icon__50d,
-.icon__50n {
+.sun{
   background-image: url("./images/sun.svg");
 }
 
-.icon__51d,
-.icon__51n {
+.thunderstorm{
   background-image: url("./images/thunderstorm.svg");
 }
 
