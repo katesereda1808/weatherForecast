@@ -4,52 +4,46 @@
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
-
 img{
     size: 50px;
 }
-
+.weather{
+  width: 100%;
+  min-height: 100vh;
+}
 html[data-theme="day"].weather,
 .weather{
     background: linear-gradient(360deg, #3594bf 0%, rgba(255, 255, 255, 0) 100%), #53a6cd;
 }
-
 html[data-theme="night"] .weather {
-    background: linear-gradient(360deg, #55707e 0%, rgba(255, 255, 255, 0) 100%),#042232;
+  color: white;
+    background: linear-gradient(360deg, #ccd2e2 0%, rgba(24, 111, 224, 0) 100%),#034079;
 }
-
 .weather__inner{
     max-width: 900px;
     margin: 0 auto;
     padding: 10px;
 }
-
 .forecast{
   display: flex;
   justify-content: space-between;
 }
-
-
 .current{
     text-align: center;
     margin-bottom: 20px;
 }
-
 .current__city{
   font-size: 3em;
 }
-
 .current__description{
   font-size: 1.5em;
 }
-
 .current__temperature{
   font-size: 4em;
 }
 .forecast__item{
   text-align: center;
 }
-
 .forecast__icon{
   width: 50px;
   height: 50px;
@@ -58,60 +52,46 @@ html[data-theme="night"] .weather {
   margin: 10px;
 }
 
-
-/* .thunderstorm,
-.sun,
-.snow,
-.shower,
-.rain,
-.partlyCloudy,
-.mist,
-.drops,
-.clouds,
-.cloud{
-  background-size: 50px;
-  background-repeat: no-repeat;
-}  */
-
-.cloud {
-  background-image: url("./images/cloud.svg");
+.icon__01d,
+.icon__01n {
+  background-image: url("./images/01d.svg");
+}
+.icon__02d,
+.icon__02n {
+  background-image: url("./images/02d.svg");
+}
+.icon__03d,
+.icon__03n {
+  background-image: url("./images/03d.svg");
+}
+.icon__04d,
+.icon__04n {
+  background-image: url("./images/04d.svg");
+}
+.icon__09d,
+.icon__09n {
+  background-image: url("./images/09d.svg");
+}
+.icon__10d,
+.icon__10n {
+  background-image: url("./images/10d.svg");
+}
+.icon__11n,
+.icon__11n {
+  background-image: url("./images/11d.svg");
+}
+.icon__13d,
+.icon__13n {
+  background-image: url("./images/13d.svg");
+}
+.icon__50d,
+.icon__50n {
+  background-image: url("./images/50d.svg");
 }
 
-.clouds {
-  background-image: url("./images/clouds.svg");
-}
 
-.drops {
-  background-image: url("./images/drops.svg");
-}
 
-.mist {
-  background-image: url("./images/mist.svg");
-}
 
-.partlyCloudy{
-  background-image: url("./images/partlyCloudy.svg");
-}
-
-.rain {
-  background-image: url("./images/rain.svg");
-}
-
-.shower {
-  background-image: url("./images/shower.svg");
-}
-
-.snow {
-  background-image: url("./images/snow.svg");
-}
-
-.sun{
-  background-image: url("./images/sun.svg");
-}
-
-.thunderstorm{
-  background-image: url("./images/thunderstorm.svg");
-}
 
 .details {
   display: flex;
