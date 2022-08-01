@@ -11,10 +11,11 @@ img{
 .weather{
   width: 100%;
   min-height: 100vh;
+  min-width: 260px;
 }
 html[data-theme="day"].weather,
 .weather{
-    background: linear-gradient(360deg, #7ad5ff, #12a3e6);
+    background: linear-gradient(360deg, #aae4ff, #12a3e6);
 }
 html[data-theme="night"] .weather {
   color: white;
@@ -70,13 +71,21 @@ html[data-theme="night"] .weather {
   margin: 10px;
 }
 
-.icon__01d,
-.icon__01n {
+.icon__01d {
   background-image: url("./images/01d.svg");
 }
-.icon__02d,
-.icon__02n {
+.icon__01n{
+  background-image: url("./images/01n.svg");
+}
+.icon__02d{
   background-image: url("./images/02d.svg");
+}
+.icon{
+  height: 100px;
+  width: 100px;
+}
+.icon__02n {
+  background-image: url("./images/02n.svg");
 }
 .icon__03d,
 .icon__03n {
@@ -112,9 +121,21 @@ html[data-theme="night"] .weather {
 
 
 .details {
+  /* max-width: 500px; */
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 2rem;
+}
+.details__box{
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #12a3e65c;
+  padding: 20px;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 50px;
+  /* background-image: -webkit-linear-gradient(); */
 }
 
 .details_item {

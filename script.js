@@ -60,8 +60,11 @@ function getLocation(){
 }
 
 function getForecast(coordinates){
-    fetch(`http://api.openweathermap.org/data/2.5/forecast?lat=${coordinates.latitude}&lon=${coordinates.longitude}&appid=${apiKey}`)
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${coordinates.latitude}&lon=${coordinates.longitude}&appid=${apiKey}`)
     .then((response) => {
+        // if(!response.ok){
+        //     throw 'Error';
+        // }
         return response.json();
       })
     .then((data) => {
